@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AcronymListComponent } from './acronym-list/acronym-list.component';
+import { WorkWebsitesComponent } from './work-websites/work-websites.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AcronymListComponent
+    AcronymListComponent,
+    WorkWebsitesComponent
   ],
   imports: [
     BrowserModule,
