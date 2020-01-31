@@ -1,9 +1,26 @@
 <nav>
     <h1><a routerLink="">Click Here To Clear</a></h1>
 </nav>
+<label> Acronym:
+    <input #nAcronym />
+</label>
+<button (click)="add(nAcronym.value)">
+    Add
+</button>
 
+<!-- <p> <button (click)="test()"> Click Here To Test</button> </p> -->
 
-<p>BLI - Broker Integration Layer</p>
+<p>Most Recently Added: {{ AcronymLatest }}</p>
+
+<!-- <p>{{ testString }}</p>  -->
+
+<ul class="Acronyms">
+    <li *ngFor="let acronym of Acronyms">
+        <span class="badge">{{acronym}}</span>
+    </li>
+  </ul>
+
+<p>BIL - Brokerage Integration Layer</p>
 <p>3FOX - The Front End (What you're working on)</p>
 <p>3BOX - The Back End</p>
 <p>3ROX</p>

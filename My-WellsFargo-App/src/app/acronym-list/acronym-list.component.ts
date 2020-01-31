@@ -7,7 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcronymListComponent implements OnInit {
 
+  Acronyms: String[] = [];
+  AcronymsIndex: number = 1;
+  AcronymLatest: string = '';
+  testString: string = 'Testing here.';
+
   constructor() { }
+
+  test(testing: string) : void{
+    this.testString = "Test Successful!";
+  }
+
+  add(acronym: string) : void {
+    this.Acronyms[0] = "Initialization Test";
+    this.AcronymLatest = acronym;
+    this.Acronyms[this.AcronymsIndex] = acronym;
+    this.AcronymsIndex += 1;
+  }
 
   ngOnInit() {
   }
